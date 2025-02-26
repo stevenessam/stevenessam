@@ -21,4 +21,4 @@
 ## Connect with Me
 
 - 🌐 LinkedIn: [LinkedIn](https://www.linkedin.com/in/stevenessam/)
-- 📫 Gmail: [Steven Essam Mail](mailto:steven.es.fr@gmail.com)
+- 📫 Gmail: [Mail](mailto:steven.es.fr@gmail.com)
