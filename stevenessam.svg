@@ -57,7 +57,7 @@
     <!-- Identity -->
     <g font-family="Outfit, Inter, Segoe UI, Arial, sans-serif">
       <text x="135" y="300" fill="#e8edf5" font-size="112" font-weight="800" letter-spacing="-4">Steven Essam<tspan fill="#4f8ef7">.</tspan></text>
-      <text x="140" y="390" fill="#7a8aaa" font-size="50" font-weight="400">Ingénieur Logiciel</text>
+      <text x="140" y="390" fill="#7a8aaa" font-size="50" font-weight="400">Ingénieur <tspan fill="#4f8ef7" font-weight="700">Logiciel</tspan></text>
     </g>
 
     <!-- Experience -->
