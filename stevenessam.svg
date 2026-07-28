@@ -1,45 +1,101 @@
-<svg viewBox="0 0 1320 300" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Russo+One');
-    svg {
-      font-family: 'Russo One', sans-serif;
-      width: 100%;
-      height: 100%;
-    }
-    text {
-      text-transform: uppercase;
-      animation: stroke 5s infinite alternate;
-      stroke-width: 2;
-      stroke: #365fa0;
-      font-size: 140px;
-    }
-    @keyframes stroke {
-      0% {
-        fill: rgba(72,138,20,0);
-        stroke: rgba(54,95,160,1);
-        stroke-dashoffset: 25%;
-        stroke-dasharray: 0 50%;
-        stroke-width: 2;
-      }
-      70% {
-        fill: rgba(72,138,20,0);
-        stroke: rgba(54,95,160,1);
-      }
-      80% {
-        fill: rgba(72,138,20,0);
-        stroke: rgba(54,95,160,1);
-        stroke-width: 3;
-      }
-      100% {
-        fill: rgba(72,138,204,1);
-        stroke: rgba(54,95,160,0);
-        stroke-dashoffset: -25%;
-        stroke-dasharray: 50% 0;
-        stroke-width: 0;
-      }
-    }
-  </style>
-  <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-    Steven Essam
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1774" height="600" viewBox="0 0 1774 600" role="img" aria-labelledby="title desc">
+  <title id="title">Steven Essam — Ingénieur Logiciel</title>
+  <desc id="desc">Professional technology banner with animated circuit lines.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06101f"/>
+      <stop offset="0.52" stop-color="#081426"/>
+      <stop offset="1" stop-color="#0b1b32"/>
+    </linearGradient>
+    <linearGradient id="blueText" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#70a7ff"/>
+      <stop offset="1" stop-color="#2878f5"/>
+    </linearGradient>
+    <linearGradient id="circuitFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2476ed" stop-opacity="0.75"/>
+      <stop offset="0.55" stop-color="#4795ff" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#4795ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="rounded"><rect width="1774" height="600" rx="42"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <rect width="1774" height="600" fill="url(#background)"/>
+
+    <!-- Quiet structural grid -->
+    <g stroke="#4b8fe9" stroke-opacity="0.055" stroke-width="1">
+      <path d="M0 100H1774M0 200H1774M0 300H1774M0 400H1774M0 500H1774"/>
+      <path d="M200 0V600M400 0V600M600 0V600M800 0V600M1000 0V600M1200 0V600M1400 0V600M1600 0V600"/>
+    </g>
+
+    <!-- Animated circuit layer -->
+    <g fill="none" stroke="url(#circuitFade)" stroke-width="2">
+      <path d="M-40 76H210L270 136H540L610 66H820" stroke-dasharray="12 18">
+        <animate attributeName="stroke-dashoffset" from="0" to="-120" dur="7s" repeatCount="indefinite"/>
+      </path>
+      <path d="M-30 164H105L165 224H445L510 159H770" stroke-dasharray="8 20">
+        <animate attributeName="stroke-dashoffset" from="0" to="-112" dur="9s" repeatCount="indefinite"/>
+      </path>
+      <path d="M-40 470H175L235 410H520L585 475H830" stroke-dasharray="14 22">
+        <animate attributeName="stroke-dashoffset" from="0" to="-144" dur="8s" repeatCount="indefinite"/>
+      </path>
+      <path d="M1774 92H1610L1545 157H1370L1310 97H1110" stroke-dasharray="10 22">
+        <animate attributeName="stroke-dashoffset" from="0" to="128" dur="8.5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M1810 520H1630L1570 460H1390L1325 525H1080" stroke-dasharray="9 18">
+        <animate attributeName="stroke-dashoffset" from="0" to="108" dur="6.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Moving data wave -->
+    <g fill="none" stroke="#2e7ce8" stroke-opacity="0.13" stroke-width="2">
+      <path d="M680 585C850 420 1000 430 1130 515S1430 620 1810 330"/>
+      <path d="M700 600C870 435 1015 445 1145 530S1445 635 1825 345"/>
+      <path d="M720 615C890 450 1030 460 1160 545S1460 650 1840 360"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-35 0;0 0" dur="10s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Pulsing circuit nodes -->
+    <g fill="#4b92ff" filter="url(#glow)">
+      <circle cx="210" cy="76" r="4"><animate attributeName="opacity" values=".25;1;.25" dur="2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="445" cy="224" r="4"><animate attributeName="opacity" values="1;.25;1" dur="3.4s" repeatCount="indefinite"/></circle>
+      <circle cx="235" cy="410" r="4"><animate attributeName="opacity" values=".2;1;.2" dur="3.1s" repeatCount="indefinite"/></circle>
+      <circle cx="1545" cy="157" r="4"><animate attributeName="opacity" values="1;.2;1" dur="3.7s" repeatCount="indefinite"/></circle>
+      <circle cx="1570" cy="460" r="4"><animate attributeName="opacity" values=".2;1;.2" dur="2.6s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- Left identity -->
+    <g font-family="Inter, Segoe UI, Arial, sans-serif">
+      <text x="135" y="300" fill="#f8fafc" font-size="112" font-weight="750" letter-spacing="-4">Steven Essam<tspan fill="#3b82f6">.</tspan></text>
+      <text x="140" y="390" fill="#8ca4c8" font-size="50" font-weight="400">Ingénieur Logiciel</text>
+    </g>
+
+    <!-- Experience -->
+    <g transform="translate(1232 105)" font-family="Inter, Segoe UI, Arial, sans-serif">
+      <g transform="translate(0 15)" fill="none" stroke="#4b91ff" stroke-width="4">
+        <rect x="0" y="18" width="62" height="43" rx="4"/>
+        <path d="M20 18v-8c0-6 5-10 10-10h2c6 0 10 4 10 10v8M0 34l31 14 31-14"/>
+      </g>
+      <text x="135" y="64" fill="url(#blueText)" font-size="62" font-weight="800">02+</text>
+      <text x="135" y="108" fill="#c7d2e5" font-size="21" font-weight="700" letter-spacing="1">ANS D’EXPÉRIENCE</text>
+      <rect x="135" y="142" width="285" height="6" rx="3" fill="#17243a"/>
+      <rect x="135" y="142" width="158" height="6" rx="3" fill="#438df8"/>
+    </g>
+
+    <!-- Education -->
+    <g transform="translate(1230 335)" font-family="Inter, Segoe UI, Arial, sans-serif">
+      <g transform="translate(0 10)" fill="none" stroke="#4b91ff" stroke-width="4">
+        <path d="M0 30L37 10l37 20-37 20L0 30zM14 39v19l23 12 23-12V39M74 30v43"/>
+      </g>
+      <text x="135" y="67" fill="url(#blueText)" font-size="62" font-weight="800">BAC+5</text>
+      <text x="135" y="111" fill="#c7d2e5" font-size="21" font-weight="700" letter-spacing="1">INGÉNIEUR INFORMATIQUE</text>
+      <rect x="135" y="145" width="285" height="6" rx="3" fill="#17243a"/>
+      <rect x="135" y="145" width="190" height="6" rx="3" fill="#438df8"/>
+    </g>
+  </g>
 </svg>

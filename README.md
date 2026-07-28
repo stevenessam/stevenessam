@@ -1,4 +1,4 @@
-![Steven Essam](stevenessam.png)
+![Steven Essam](stevenessam.svg)
 
 ## About Me
 
