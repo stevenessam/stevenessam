@@ -1,13 +1,12 @@
-# Hi, I'm Steven Essam 👋
-
 ![Steven Essam](stevenessam.png)
 
-I'm a software developer interested in building useful products and learning new technologies.
+## About Me
 
-- 💻 Software development
-- 🎨 Design
-- 🌱 Always learning
+- 🌱 I’m learning new technologies and frameworks.
+- 🤔 I’m interested in Software Development and design.
+- 💬 Ask me about anything tech-related!
 
-## Contact
+## Connect with Me
 
-[LinkedIn](https://www.linkedin.com/in/stevenessam/) · [Email](mailto:steven.es.fr@gmail.com)
+- 🌐 LinkedIn: [LinkedIn](https://www.linkedin.com/in/stevenessam/)
+- 📫 Gmail: [Mail](mailto:steven.es.fr@gmail.com)
