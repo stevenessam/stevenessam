@@ -4,19 +4,24 @@
 
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#06101f"/>
-      <stop offset="0.52" stop-color="#081426"/>
-      <stop offset="1" stop-color="#0b1b32"/>
+      <stop offset="0" stop-color="#020817"/>
+      <stop offset="0.48" stop-color="#041126"/>
+      <stop offset="1" stop-color="#071a35"/>
     </linearGradient>
     <linearGradient id="blueText" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#70a7ff"/>
       <stop offset="1" stop-color="#2878f5"/>
     </linearGradient>
     <linearGradient id="circuitFade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2476ed" stop-opacity="0.75"/>
-      <stop offset="0.55" stop-color="#4795ff" stop-opacity="0.3"/>
+      <stop offset="0" stop-color="#277cf2" stop-opacity="0.62"/>
+      <stop offset="0.55" stop-color="#4795ff" stop-opacity="0.24"/>
       <stop offset="1" stop-color="#4795ff" stop-opacity="0"/>
     </linearGradient>
+    <radialGradient id="spotlight" cx="48%" cy="44%" r="72%">
+      <stop offset="0" stop-color="#17447d" stop-opacity="0.14"/>
+      <stop offset="0.58" stop-color="#071a35" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#00030c" stop-opacity="0.48"/>
+    </radialGradient>
     <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -26,9 +31,10 @@
 
   <g clip-path="url(#rounded)">
     <rect width="1774" height="600" fill="url(#background)"/>
+    <rect width="1774" height="600" fill="url(#spotlight)"/>
 
     <!-- Quiet structural grid -->
-    <g stroke="#4b8fe9" stroke-opacity="0.055" stroke-width="1">
+    <g stroke="#4b8fe9" stroke-opacity="0.035" stroke-width="1">
       <path d="M0 100H1774M0 200H1774M0 300H1774M0 400H1774M0 500H1774"/>
       <path d="M200 0V600M400 0V600M600 0V600M800 0V600M1000 0V600M1200 0V600M1400 0V600M1600 0V600"/>
     </g>
@@ -53,7 +59,7 @@
     </g>
 
     <!-- Moving data wave -->
-    <g fill="none" stroke="#2e7ce8" stroke-opacity="0.13" stroke-width="2">
+    <g fill="none" stroke="#2e7ce8" stroke-opacity="0.1" stroke-width="2">
       <path d="M680 585C850 420 1000 430 1130 515S1430 620 1810 330"/>
       <path d="M700 600C870 435 1015 445 1145 530S1445 635 1825 345"/>
       <path d="M720 615C890 450 1030 460 1160 545S1460 650 1840 360"/>
