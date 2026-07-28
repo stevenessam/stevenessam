@@ -1,5 +1,5 @@
 # Hi there, I'm Steven Essam! 👋
-![Steven Essam Animation](stevenessam.svg)
+![Steven Essam](stevenessam.png)
 
 
 ## About Me
