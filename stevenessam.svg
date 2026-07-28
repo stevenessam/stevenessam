@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1774" height="600" viewBox="0 0 1774 600" role="img" aria-labelledby="title desc">
   <title id="title">Steven Essam — Ingénieur Logiciel</title>
-  <desc id="desc">Professional technology banner with animated circuit lines.</desc>
+  <desc id="desc">Professional navy banner with a subtle animated star field.</desc>
 
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
@@ -12,11 +12,6 @@
       <stop offset="0" stop-color="#70a7ff"/>
       <stop offset="1" stop-color="#2878f5"/>
     </linearGradient>
-    <linearGradient id="circuitFade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#277cf2" stop-opacity="0.62"/>
-      <stop offset="0.55" stop-color="#4795ff" stop-opacity="0.24"/>
-      <stop offset="1" stop-color="#4795ff" stop-opacity="0"/>
-    </linearGradient>
     <radialGradient id="spotlight" cx="48%" cy="44%" r="72%">
       <stop offset="0" stop-color="#17447d" stop-opacity="0.14"/>
       <stop offset="0.58" stop-color="#071a35" stop-opacity="0.04"/>
@@ -26,6 +21,18 @@
       <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <pattern id="starsFar" width="180" height="130" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="24" r="1" fill="#88b7ff" opacity=".45"/>
+      <circle cx="92" cy="68" r="1.2" fill="#d5e6ff" opacity=".5"/>
+      <circle cx="154" cy="108" r=".8" fill="#6b9eea" opacity=".4"/>
+      <circle cx="48" cy="116" r=".7" fill="#fff" opacity=".35"/>
+    </pattern>
+    <pattern id="starsNear" width="310" height="210" patternUnits="userSpaceOnUse">
+      <circle cx="36" cy="42" r="2" fill="#e5f0ff" opacity=".8"/>
+      <circle cx="174" cy="82" r="1.7" fill="#73a9ff" opacity=".75"/>
+      <circle cx="272" cy="168" r="2.3" fill="#fff" opacity=".72"/>
+      <circle cx="108" cy="188" r="1.4" fill="#a9cbff" opacity=".65"/>
+    </pattern>
     <clipPath id="rounded"><rect width="1774" height="600" rx="42"/></clipPath>
   </defs>
 
@@ -33,46 +40,21 @@
     <rect width="1774" height="600" fill="url(#background)"/>
     <rect width="1774" height="600" fill="url(#spotlight)"/>
 
-    <!-- Quiet structural grid -->
-    <g stroke="#4b8fe9" stroke-opacity="0.035" stroke-width="1">
-      <path d="M0 100H1774M0 200H1774M0 300H1774M0 400H1774M0 500H1774"/>
-      <path d="M200 0V600M400 0V600M600 0V600M800 0V600M1000 0V600M1200 0V600M1400 0V600M1600 0V600"/>
+    <!-- Slow parallax star field -->
+    <g>
+      <rect x="-180" y="-130" width="2134" height="860" fill="url(#starsFar)">
+        <animateTransform attributeName="transform" type="translate" values="0 0;180 130" dur="42s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="-310" y="-210" width="2394" height="1020" fill="url(#starsNear)">
+        <animateTransform attributeName="transform" type="translate" values="0 0;310 210" dur="26s" repeatCount="indefinite"/>
+      </rect>
     </g>
 
-    <!-- Animated circuit layer -->
-    <g fill="none" stroke="url(#circuitFade)" stroke-width="2">
-      <path d="M-40 76H210L270 136H540L610 66H820" stroke-dasharray="12 18">
-        <animate attributeName="stroke-dashoffset" from="0" to="-120" dur="7s" repeatCount="indefinite"/>
-      </path>
-      <path d="M-30 164H105L165 224H445L510 159H770" stroke-dasharray="8 20">
-        <animate attributeName="stroke-dashoffset" from="0" to="-112" dur="9s" repeatCount="indefinite"/>
-      </path>
-      <path d="M-40 470H175L235 410H520L585 475H830" stroke-dasharray="14 22">
-        <animate attributeName="stroke-dashoffset" from="0" to="-144" dur="8s" repeatCount="indefinite"/>
-      </path>
-      <path d="M1774 92H1610L1545 157H1370L1310 97H1110" stroke-dasharray="10 22">
-        <animate attributeName="stroke-dashoffset" from="0" to="128" dur="8.5s" repeatCount="indefinite"/>
-      </path>
-      <path d="M1810 520H1630L1570 460H1390L1325 525H1080" stroke-dasharray="9 18">
-        <animate attributeName="stroke-dashoffset" from="0" to="108" dur="6.5s" repeatCount="indefinite"/>
-      </path>
-    </g>
-
-    <!-- Moving data wave -->
-    <g fill="none" stroke="#2e7ce8" stroke-opacity="0.1" stroke-width="2">
-      <path d="M680 585C850 420 1000 430 1130 515S1430 620 1810 330"/>
-      <path d="M700 600C870 435 1015 445 1145 530S1445 635 1825 345"/>
-      <path d="M720 615C890 450 1030 460 1160 545S1460 650 1840 360"/>
-      <animateTransform attributeName="transform" type="translate" values="0 0;-35 0;0 0" dur="10s" repeatCount="indefinite"/>
-    </g>
-
-    <!-- Pulsing circuit nodes -->
-    <g fill="#4b92ff" filter="url(#glow)">
-      <circle cx="210" cy="76" r="4"><animate attributeName="opacity" values=".25;1;.25" dur="2.8s" repeatCount="indefinite"/></circle>
-      <circle cx="445" cy="224" r="4"><animate attributeName="opacity" values="1;.25;1" dur="3.4s" repeatCount="indefinite"/></circle>
-      <circle cx="235" cy="410" r="4"><animate attributeName="opacity" values=".2;1;.2" dur="3.1s" repeatCount="indefinite"/></circle>
-      <circle cx="1545" cy="157" r="4"><animate attributeName="opacity" values="1;.2;1" dur="3.7s" repeatCount="indefinite"/></circle>
-      <circle cx="1570" cy="460" r="4"><animate attributeName="opacity" values=".2;1;.2" dur="2.6s" repeatCount="indefinite"/></circle>
+    <!-- Occasional softly twinkling stars -->
+    <g fill="#dbeaff" filter="url(#glow)">
+      <circle cx="760" cy="104" r="2.5"><animate attributeName="opacity" values=".2;1;.2" dur="3.2s" repeatCount="indefinite"/></circle>
+      <circle cx="1050" cy="470" r="2"><animate attributeName="opacity" values="1;.18;1" dur="4.6s" repeatCount="indefinite"/></circle>
+      <circle cx="1160" cy="245" r="2.8"><animate attributeName="opacity" values=".25;1;.25" dur="3.8s" repeatCount="indefinite"/></circle>
     </g>
 
     <!-- Left identity -->
