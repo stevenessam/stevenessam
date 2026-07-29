@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396" role="img" aria-labelledby="title desc"><title id="title">Steven Essam — Ingénieur Logiciel</title>
+  <desc id="desc">Dark professional technology banner with animated circuits.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#02040a"/>
+      <stop offset=".55" stop-color="#050b18"/>
+      <stop offset="1" stop-color="#071225"/>
+    </linearGradient>
+    <radialGradient id="ambient" cx="46%" cy="48%" r="75%">
+      <stop offset="0" stop-color="#173d78" stop-opacity=".18"/>
+      <stop offset=".55" stop-color="#0b1c38" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#01030a" stop-opacity=".65"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f8ef7"/>
+      <stop offset="1" stop-color="#7c5cfc"/>
+    </linearGradient>
+    <linearGradient id="circuit" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f8ef7" stop-opacity="0"/>
+      <stop offset=".2" stop-color="#4f8ef7" stop-opacity=".5"/>
+      <stop offset=".72" stop-color="#4f8ef7" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#4f8ef7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="canvasClip"><rect width="1584" height="396"/></clipPath></defs>
+
+  <g clip-path="url(#canvasClip)"><rect width="1584" height="396" fill="url(#bg)"/><rect width="1584" height="396" fill="url(#ambient)"><animate attributeName="opacity" values=".72;1;.72" dur="8s" repeatCount="indefinite"/></rect><g transform="translate(206.58 0) scale(0.66)" id="original-artwork-centered"><!-- Smooth animated data-flow layer -->
+    <g fill="none" stroke="#4f8ef7" stroke-linecap="round">
+      <path id="flowTop" d="M-100 155C220 30 470 230 760 115S1240 15 1870 190" stroke-opacity=".12" stroke-width="2"/>
+      <path d="M-120 185C210 60 480 260 780 145S1260 45 1890 220" stroke-opacity=".07" stroke-width="2">
+        <animateTransform attributeName="transform" type="translate" values="-25 0;25 -8;-25 0" dur="12s" repeatCount="indefinite"/>
+      </path>
+      <path id="flowBottom" d="M-100 520C230 365 500 590 800 455S1300 345 1880 510" stroke-opacity=".11" stroke-width="2"/>
+      <path d="M-120 550C220 395 510 620 820 485S1320 375 1900 540" stroke-opacity=".06" stroke-width="2">
+        <animateTransform attributeName="transform" type="translate" values="25 0;-25 8;25 0" dur="14s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Light particles traveling along the curves -->
+    <g fill="#79aaff" filter="url(#glow)">
+      <circle r="3.5"><animateMotion dur="8s" repeatCount="indefinite"><mpath href="#flowTop"/></animateMotion></circle>
+      <circle r="2.5" opacity=".7"><animateMotion dur="11s" begin="-4s" repeatCount="indefinite"><mpath href="#flowTop"/></animateMotion></circle>
+      <circle r="3.5"><animateMotion dur="9s" begin="-2s" repeatCount="indefinite"><mpath href="#flowBottom"/></animateMotion></circle>
+    </g>
+
+    <!-- Identity -->
+    <g transform="translate(0 -50)" font-family="Outfit, Inter, Segoe UI, Arial, sans-serif">
+      <text x="135" y="300" fill="#e8edf5" font-size="112" font-weight="800" letter-spacing="-4">Steven Essam<tspan fill="#4f8ef7">.</tspan></text>
+      <text x="140" y="390" fill="#aebbd1" font-size="50" font-weight="500">Ingénieur <tspan fill="#4f8ef7" font-weight="600">Logiciel</tspan></text>
+
+      <!-- Social profiles -->
+      <g transform="translate(140 460)">
+        <rect width="34" height="34" rx="7" fill="#4f8ef7"/>
+        <circle cx="9" cy="10" r="2.4" fill="#fff"/>
+        <rect x="6.8" y="14.5" width="4.4" height="12.5" rx="1" fill="#fff"/>
+        <path d="M15 14.5h4.2v1.8c1.5-2.1 7.8-3.2 7.8 4.5V27h-4.5v-5.4c0-3.2-3.5-3-3.5 0V27h-4V14.5z" fill="#fff"/>
+        <text x="50" y="25" fill="#aebbd1" font-size="24" font-weight="500">@stevenessam</text>
+      </g>
+
+      <g transform="translate(420 460)">
+        <circle cx="17" cy="17" r="17" fill="#4f8ef7"/>
+        <path d="M17 6.2a10.9 10.9 0 0 0-3.4 21.2c.5.1.7-.2.7-.5v-2.1c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1a9.7 9.7 0 0 1 5.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.7.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.7 1 .7 1.9v2.9c0 .3.2.6.7.5A10.9 10.9 0 0 0 17 6.2z" fill="#fff"/>
+        <text x="50" y="25" fill="#aebbd1" font-size="24" font-weight="500">@stevenessam</text>
+      </g>
+    </g>
+
+    <!-- Experience -->
+    <g transform="translate(1232 105)" font-family="Outfit, Inter, Segoe UI, Arial, sans-serif">
+      <g transform="translate(0 15)" fill="none" stroke="#4f8ef7" stroke-width="4">
+        <rect x="0" y="18" width="62" height="43" rx="4"/>
+        <path d="M20 18v-8c0-6 5-10 10-10h2c6 0 10 4 10 10v8M0 34l31 14 31-14"/>
+      </g>
+      <text x="135" y="64" fill="#4f8ef7" font-size="62" font-weight="800">02+</text>
+      <text x="135" y="108" fill="#7a8aaa" font-size="21" font-weight="700" letter-spacing="1">ANS D’EXPÉRIENCE</text>
+      <rect x="135" y="142" width="285" height="6" rx="3" fill="#fff" opacity=".05"/>
+      <rect x="135" y="142" width="65" height="6" rx="3" fill="#4f8ef7">
+        <animate attributeName="width" from="0" to="65" dur="1.8s" begin=".5s" fill="freeze"/>
+      </rect>
+    </g>
+
+    <!-- Education -->
+    <g transform="translate(1230 335)" font-family="Outfit, Inter, Segoe UI, Arial, sans-serif">
+      <g transform="translate(0 10)" fill="none" stroke="#4f8ef7" stroke-width="4">
+        <path d="M0 30L37 10l37 20-37 20L0 30zM14 39v19l23 12 23-12V39M74 30v43"/>
+      </g>
+      <text x="135" y="67" fill="#4f8ef7" font-size="62" font-weight="800">BAC+5</text>
+      <text x="135" y="111" fill="#7a8aaa" font-size="21" font-weight="700" letter-spacing="1">INGÉNIEUR INFORMATIQUE</text>
+      <rect x="135" y="145" width="285" height="6" rx="3" fill="#fff" opacity=".05"/>
+      <rect x="135" y="145" width="238" height="6" rx="3" fill="#4f8ef7">
+        <animate attributeName="width" from="0" to="238" dur="1.8s" begin=".7s" fill="freeze"/>
+      </rect>
+    </g>
+  </g></g><metadata>LinkedIn personal banner, 1584 x 396 px. Original artwork scaled uniformly to 66% and centered; background extended evenly by 206.58 px on both sides. Text remains SVG text where supported.</metadata></svg>
