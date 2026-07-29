@@ -4,6 +4,8 @@
 
 <br>
 
+## Technologies & expertise
+
 <table width="100%" cellspacing="24" cellpadding="18" border="0" frame="void" rules="none" style="border: none;">
   <tr>
     <td width="50%" align="center" style="border: none;">
