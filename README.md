@@ -2,7 +2,7 @@
 
 <img src="stevenessam.svg" width="100%" alt="Steven Essam — Software Engineer" />
 
-<br>
+<br><br>
 
 <table width="100%" cellspacing="24" cellpadding="18" border="0" frame="void" rules="none" style="border: none;">
   <tr>
