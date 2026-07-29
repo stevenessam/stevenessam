@@ -20,9 +20,8 @@
   <tr>
     <td width="50%" align="center" style="border: none;">
       <h3>🗄️ Bases de données</h3>
-      <img src="https://skillicons.dev/icons?i=mysql,mongodb,postgres&theme=dark" height="58" alt="MySQL, MongoDB and PostgreSQL" />
-      &nbsp;&nbsp;
-      <img src="https://cdn.simpleicons.org/influxdb/22ADF6" width="48" height="48" alt="InfluxDB" />
+      <img src="https://skillicons.dev/icons?i=mysql,mongodb,postgres&theme=dark" height="50" alt="MySQL, MongoDB and PostgreSQL" />&nbsp;
+      <img src="https://cdn.simpleicons.org/influxdb/22ADF6" width="40" height="40" alt="InfluxDB" />
       <br><sub>MySQL · MongoDB · PostgreSQL · InfluxDB</sub>
     </td>
     <td width="50%" align="center" style="border: none;">
