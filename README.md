@@ -27,11 +27,9 @@
     </td>
     <td width="50%" align="center" style="border: none;">
       <h3>🛠️ Outils et méthodes</h3>
-      <img src="https://skillicons.dev/icons?i=docker,git&theme=dark" height="58" alt="Docker and Git" />
-      &nbsp;&nbsp;
-      <img src="https://cdn.simpleicons.org/jira/2684FF" width="48" height="48" alt="Jira" />
-      &nbsp;&nbsp;
-      <img src="https://cdn.simpleicons.org/confluence/4F8EF7" width="48" height="48" alt="Confluence" />
+      <img src="https://skillicons.dev/icons?i=docker,git&theme=dark" height="50" alt="Docker and Git" />&nbsp;
+      <img src="https://cdn.simpleicons.org/jira/2684FF" width="40" height="40" alt="Jira" />&nbsp;
+      <img src="https://cdn.simpleicons.org/confluence/4F8EF7" width="40" height="40" alt="Confluence" />
       <br><sub>Docker · Git · Jira · Confluence</sub>
     </td>
   </tr>
